@@ -67,13 +67,17 @@ function App()
           <label htmlFor='password'>
             Password
           </label>
+          <input name='password' value={password} type='password' onChange={handleChange}>
+
+          </input>
+        </div>
+
           <input type='submit' value={"login"} onclick={handleClick} disabled={isLoading}>
 
           </input>
           <LoadingModal show = {isLoading}>
-            
+
           </LoadingModal>
-        </div>
       </div>
     </div>
   );
