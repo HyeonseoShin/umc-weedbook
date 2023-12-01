@@ -82,7 +82,7 @@ function App()
 
     try
     {
-      const response = await axios.post("http://localhost:8000/user/login",
+      const response = await axios.post("http://localhost:8000/",
       {
         id: id,
         pw: pw,
@@ -95,7 +95,7 @@ function App()
     } catch (error) {
       console.log("post 요청 실패", error);
     } finally {
-      const newId = 25;
+      const newId = 24;
       setId(newId);
 
       localStorage.setItem("id", newId.toString());
